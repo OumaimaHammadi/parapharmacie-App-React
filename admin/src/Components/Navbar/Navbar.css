@@ -1,0 +1,65 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 60px;
+    box-shadow: 0 1px 3px -2px #000;
+    margin-bottom: 1px;
+    background: white;
+
+}
+
+
+
+
+
+.nav-logo{
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   
+}
+.nav-text {
+  display: flex;
+  flex-direction: column; /* aligne verticalement PHARMA et Admin Panel */
+  line-height: 1.2;
+}
+
+/* .nav-logo p{
+    color: #171717;
+    font-size: 38px;
+    font-weight: 600;
+} */
+
+.nav-text p {
+  font-size: 38px;
+  /* font-weight: bold; */
+   font-size: 38px;
+    font-weight: 600;
+  margin: 0;
+}
+
+
+.nav-text span {
+  font-size: 14px;
+  color: red;
+}
+
+.nav-profile{
+    width: 75px;
+}
+
+@media(max-width:800px){
+    .navbar{
+        padding: 15px 30px;
+    }
+
+    .nav-logo{
+        width: 150px;
+
+    }
+
+    .nav-profile{
+        width: 60px;
+    }
+}
