@@ -14,7 +14,7 @@ const Hero = () => {
 
       <p >
           Effective Medicine, New Medicine Everyday</p>
-        <h1>Welcome To  <br /> Pharma</h1>
+        <h1>Welcome To Our Pharma  </h1>
 
 
    
