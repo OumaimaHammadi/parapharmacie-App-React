@@ -1,7 +1,7 @@
 import React from 'react'
 import './Footer.css'
 import instagram_icon from '../Assets/images/instagram_icon.png'
-// import pintester_icon from '../Assets/images/pintester_icon.png'
+import pintester_icon from '../Assets/images/pintester_icon.png'
 import whatsapp_icon from '../Assets/images/whatsapp_icon.png'
 
 const Footer = () => {
@@ -27,10 +27,10 @@ const Footer = () => {
                
             </div>
 
-            {/* <div className="footer-icons-container">
+            <div className="footer-icons-container">
                 <img src={pintester_icon} alt="" />
                
-            </div> */}
+            </div>
 
             <div className="footer-icons-container">
                 <img src={whatsapp_icon} alt="" />

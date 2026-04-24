@@ -15,14 +15,14 @@ const CartItems = () => {
       
     const cartDetails = all_product
       .filter(product => cartItems[product.id] > 0)
-      .map(product => ({
+      ?.map(product => ({
         name: product.name,
         quantity: cartItems[product.id],
         new_price:product.new_price
 
       }));
 
-    navigate('/checkout', { state: { totalAmount , cartDetails} });
+    navigate('/checkout', { state: { totalAmount , cartDetails ,menu: "checkout" }});
   }
   
   
@@ -65,7 +65,7 @@ const CartItems = () => {
               <h1>Cart Totals</h1>
               <div>
                  <div className="cartitems-total-item">
-                     <p>Subtatal</p>
+                     <p>Subtotal</p>
                      <p>${getTotalCartAmount()}</p>
                   </div>
                   <hr />

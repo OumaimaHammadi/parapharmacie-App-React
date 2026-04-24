@@ -9,10 +9,13 @@ const ProductDisplay = (props) => {
   const {addToCart}=useContext(ShopContext)
 
    const navigate = useNavigate();
+   
 
   const handleAddToCart = () => {
     addToCart(product.id);
-    navigate('/cart');
+
+    navigate('/cart',{state: { menu: "cart" }
+});
   }
 
 
@@ -92,8 +95,7 @@ const ProductDisplay = (props) => {
            <div className="btn-add-toCart">
           
 
-            {/* <button onClick={(()=>{addToCart(product.id)})}>ADD TO CART</button> */}
-
+{/* <button onClick={(() => {setMenu("cart"), {handleAddToCart}})}> ADD TO CART</button> */}
 
            <button onClick={handleAddToCart}>ADD TO CART</button>
 

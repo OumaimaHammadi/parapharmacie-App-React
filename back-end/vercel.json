@@ -1,16 +1,11 @@
 {
     "version" : 2,
     "name" : "Parapharmacie_App",
-    "builds" : [
-        {
-            "src" : "./index.js",
-            "use" : "@vercel/node"
-        }
-    ],
+  
     "routes" : [
         {
             "src" : "/(.*)",
-            "dest" : "/"
+            "dest": "/api/index.js"
         }
     ]
 }  

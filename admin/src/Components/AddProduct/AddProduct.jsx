@@ -32,7 +32,8 @@ const Add_Product =async()=>{
   let formData = new FormData()
   formData.append('product',image)
 
-   await fetch('http://localhost:8000/api/v1/upload',{
+   await fetch('http://localhost:8000/api/v1/images/upload'
+    ,{
     method:'POST',
     headers:{
       Accept:'application/json',
@@ -46,7 +47,10 @@ const Add_Product =async()=>{
   })
 
   if(responseData.success){
-        product.image= responseData.image_url
+
+             product.image = responseData.data.url;
+
+        // product.image= responseData.image_url
 
 
         console.log("product.image",product.image)
@@ -63,6 +67,8 @@ const Add_Product =async()=>{
 
       }).then((resp)=> resp.json()).then((data)=>{
         data.success?alert("Product Added"):alert("Failed")
+                   window.location.replace("/listproduct")
+
                
 
       })
