@@ -1,13 +1,16 @@
 import React , {useState,useEffect} from 'react'
 import './NewProducts.css'
 import Item from '../Item/item'
+const BASE_URL = process.env.REACT_APP_BASE_URL ;
+
 
 const NewProducts = () => {
 
   const [new_product,setNew_product]= useState([])
 
   useEffect(()=>{
-    fetch('http://localhost:8000/api/v1/newproducts')
+    fetch(`${BASE_URL}/newproducts`)
+
     .then((response)=> response.json())
     .then((data)=>setNew_product(data))
 

@@ -15,7 +15,7 @@ const CartItems = () => {
       
     const cartDetails = all_product
       .filter(product => cartItems[product.id] > 0)
-      ?.map(product => ({
+      .map(product => ({
         name: product.name,
         quantity: cartItems[product.id],
         new_price:product.new_price

@@ -1,6 +1,8 @@
 import React , {useState,useEffect} from 'react'
 import './Stores.css'
 import Item from '../Item/item'
+const BASE_URL = process.env.REACT_APP_BASE_URL ;
+
 
 
 
@@ -9,7 +11,8 @@ const Stores = () => {
     const [store_product,setStore_product]= useState([])
     
       useEffect(()=>{
-        fetch('http://localhost:8000/api/v1/store')
+        fetch(`${BASE_URL}/store`)
+
         .then((response)=> response.json())
         .then((data)=>setStore_product(data))
     
