@@ -53,7 +53,6 @@ const Add_Product =async()=>{
 
              product.image = responseData.data.url;
 
-        // product.image= responseData.image_url
 
 
         console.log("product.image",product.image)

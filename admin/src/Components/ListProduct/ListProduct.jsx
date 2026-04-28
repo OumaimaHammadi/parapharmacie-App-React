@@ -11,9 +11,9 @@ const ListProduct = () => {
   const [allproducts,setAllProducts]=useState([])
   
   const fetchInfo =async () =>{
-       await fetch(`${BASE_URL}/products/allproducts`)
 
     // await fetch('http://localhost:8000/api/v1/products/allproducts')
+       await fetch(`${BASE_URL}/products/allproducts`)
 
     .then((res)=> res.json())
     .then((data)=>{setAllProducts(data)})
