@@ -12,10 +12,10 @@ const ProductDisplay = (props) => {
    
 
   const handleAddToCart = () => {
-    addToCart(product.id);
+    addToCart(product.id)
 
     navigate('/cart',{state: { menu: "cart" }
-});
+})
   }
 
 
@@ -132,6 +132,8 @@ const ProductDisplay = (props) => {
       </div>
 
       {activeTab === 'ordering' && (
+          <div className="table-responsive">
+
         <table className="ordering-table">
           <thead>
             <tr>
@@ -150,25 +152,15 @@ const ProductDisplay = (props) => {
             ))}
           </tbody>
         </table>
+        </div>
       )}
+      
     </div>
 
            
 
            
-           {/* <div className="btn-information">
-            <div className="Ordering-Information">
-            <button onClick={(()=>{addToCart(product.id)})}>Ordering Information</button>
-
-
-            </div>
-            <div className="Specification">
-
-            <button onClick={(()=>{addToCart(product.id)})}>Specification</button>
-
-            </div>
-
-           </div> */}
+         
 
            
 

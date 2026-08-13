@@ -5,9 +5,10 @@ import hero_image from '../Assets/images/hero_1.jpg'
 
 const Hero = () => {
   return (
-  
+      <div className='hero'>
+
      
-<div className="hero-container">
+{/* <div className="hero-container"> */}
   <img src={hero_image}  alt="Hero" className="hero-image" />
   <div className="hero-content">
         
@@ -35,3 +36,5 @@ const Hero = () => {
 }
 
 export default Hero
+
+
