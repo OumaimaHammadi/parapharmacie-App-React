@@ -18,7 +18,7 @@ const Product = () => {
 
 </div>
   }
-  const product = all_product.find((e)=>e.id === Number(productId)
+  const product = all_product.find((e)=>e._id === productId
 )
 
 
